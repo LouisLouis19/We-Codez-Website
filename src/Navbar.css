@@ -1,0 +1,64 @@
+/* Navbar.css */
+
+body {
+    padding-top: 70px; /* Adjust based on your navbar height */
+  }
+  
+  .navbar {
+    background-color: #1f1f1f; /* Dark background for navbar */
+    position: fixed; /* Keeps the navbar at the top */
+    top: 0;
+    left: 0;
+    padding: 0 7.5vw 0 5vw;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .navbar-brand {
+    color: #f0f0f0; /* Light color for brand */
+    font-size: 1.8rem; /* Larger font size for brand */
+    font-weight: 700; /* Bold brand name */
+    letter-spacing: 1px; /* Spacing between letters */
+  }
+  
+  .nav-link {
+    color: #c0c0c0; /* Greyish color for links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transition */
+    font-weight: 600; /* Thicker weight for links */
+    padding: 10px 30px; /* Increased padding for better spacing */
+    margin: 0 15px; /* More margin for spacing between links */
+  }
+  
+  .nav-link:hover {
+    color: #3498db!important; /* Blue color on hover */
+    transform: scale(1.2); /* Slightly enlarge the link on hover */
+  }
+  
+  .menu_active {
+    font-weight: 700; /* Bold text for active link */
+    border-bottom: 2px solid #3498db; /* Blue border for active link */
+  }
+  
+  .navbar-toggler {
+    border-color: #3498db; /* Blue border for toggler */
+  }
+  
+  .navbar-toggler .navbar-toggler-icon {
+    background-color: #3498db; /* Blue color for toggler icon */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .nav-link {
+      padding: 10px; /* Reduce padding on smaller screens */
+      margin: 0 5px; /* Adjust margin for smaller screens */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-nav .nav-item {
+      margin-left: 30px; /* Increased spacing between nav items */
+    }
+  }
+  

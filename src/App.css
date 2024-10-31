@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif; /* Use Nunito font for all elements */
+}
+
+body {
+  background-color: #1f1f1f; /* Dark background for the entire page */
+  color: #e0e0e0; /* Light text color for better readability */
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+  cursor: url('https://cdn-icons-png.flaticon.com/512/42/42607.png'), auto; /* Custom cursor */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #000000!important; /* Darker navbar background */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  position: fixed; /* Keeps the navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar-brand {
+  font-size: 1.9rem; /* Larger brand font size */
+  color: #f0f0f0; /* Light color for brand */
+}
+
+.nav-item {
+  font-size: 1.3rem; /* Font size for nav items */
+  text-transform: capitalize; /* Capitalize text */
+}
+
+.nav-link {
+  color: #f0f0f0; /* Light color for nav links */
+  font-weight: 600; /* Thicker font weight */
+  padding: 10px 30px; /* Increased padding for better spacing */
+  margin: 0 15px; /* More margin for spacing between links */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.nav-link:hover {
+  color: #3498db; /* Blue color on hover */
+  transform: scale(1.05); /* Slightly enlarge the link on hover */
+}
+
+.menu_active {
+  font-weight: bold; /* Bold text for active link */
+  border-bottom: 1px solid #3498db; /* Blue border for active menu */
+}
+
+/* Header Styles */
+#header {
+  width: 100%;
+  height: 80vh; /* Full height for header */
+  margin-top: 70px; /* Offset for fixed navbar */
+  background-color: #1f1f1f; /* Dark background for header */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  text-align: center; /* Center text */
+}
+
+#header h1 {
+  margin: 0 0 10px 0; /* Spacing for header title */
+  font-size: 48px; /* Font size for header title */
+  font-weight: 700; /* Bold font weight for title */
+  color: #ffffff; /* White color for header title */
+}
+
+#header h2 {
+  color: #cfcfcf; /* Lighter gray for subtitle */
+  font-size: 24px; /* Font size for subtitle */
+}
+
+#header .btn-get-started {
+  font-weight: 500; /* Medium font weight for button */
+  font-size: 16px; /* Font size for button */
+  letter-spacing: 1px; /* Spacing between letters */
+  display: inline-block; /* Inline block for button */
+  padding: 10px 30px; /* Padding for button */
+  border-radius: 50px; /* Rounded corners for button */
+  transition: background-color 0.5s, transform 0.3s; /* Smooth transition for hover */
+  color: #3498db; /* Blue text for button */
+  border: 2px solid #3498db; /* Blue border for button */
+  background-color: transparent; /* Transparent background for button */
+  text-decoration: none; /* No underline for button */
+}
+
+#header .btn-get-started:hover {
+  background: #3498db; /* Blue background on hover */
+  color: #fff; /* White text on hover */
+}
+
+.header-img {
+  text-align: right; /* Align image to the right */
+}
+
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both; /* Animation for header */
+}
+
+/* Keyframes for Animation */
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Section Styles */
+main {
+  padding: 60px 0; /* Space around sections */
+}
+
+section {
+  padding: 60px 20px; /* Space within sections */
+  min-height: 100vh; /* Ensures each section takes up at least the full viewport height */
+}
+
+/* Heading Styles */
+h1, h2, h3, h4 {
+  color: #ffffff; /* White headings for contrast */
+}
+
+/* Button Styles */
+.btn-get-started {
+  background-color: #007BFF; /* Button color */
+  color: #fff; /* White text on button */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.btn-get-started:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Contact Styles */
+.contact-form {
+  background-color: #1f1f1f; /* Darker background for contact form */
+  padding: 20px; /* Padding for contact form */
+  border-radius: 5px; /* Rounded corners for contact form */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1f1f1f; /* Dark background for footer */
+  color: #f0f0f0; /* Light color for footer text */
+  text-align: center; /* Center footer text */
+  padding: 20px 0; /* Padding for footer */
+}
+
+/* Optional: Add more styles to improve the look */
