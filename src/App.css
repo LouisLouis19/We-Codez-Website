@@ -12,12 +12,12 @@ body {
   background-color: #1f1f1f; /* Dark background for the entire page */
   color: #e0e0e0; /* Light text color for better readability */
   scroll-behavior: smooth; /* Enables smooth scrolling */
-  cursor: url('https://cdn-icons-png.flaticon.com/512/42/42607.png'), auto; /* Custom cursor */
+  cursor: url("https://cdn-icons-png.flaticon.com/512/42/42607.png"), auto; /* Custom cursor */
 }
 
 /* Navbar Styles */
 .navbar {
-  background-color: #000000!important; /* Darker navbar background */
+  background-color: #000000 !important; /* Darker navbar background */
   transition: background-color 0.3s ease; /* Smooth transition for background color */
   position: fixed; /* Keeps the navbar at the top */
   top: 0;
@@ -135,13 +135,16 @@ section {
 }
 
 /* Heading Styles */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: #ffffff; /* White headings for contrast */
 }
 
 /* Button Styles */
 .btn-get-started {
-  background-color: #007BFF; /* Button color */
+  background-color: #007bff; /* Button color */
   color: #fff; /* White text on button */
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
@@ -166,4 +169,17 @@ footer {
   padding: 20px 0; /* Padding for footer */
 }
 
-/* Optional: Add more styles to improve the look */
+.faq-contact-container {
+  display: flex;
+  justify-content: space-between; /* Ensure the two components are spaced out */
+  gap: 20px; /* Adds space between the components */
+  margin: 40px 20px; /* Adds margin to the container */
+}
+
+.faq-section,
+.contact-section {
+  flex: 1; /* Allows both sections to take equal space */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box-shadow for better visuals */
+}
