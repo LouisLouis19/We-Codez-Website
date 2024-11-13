@@ -1,95 +1,128 @@
-/* General container styling */
 #courses {
-/* background-color: ; */
-padding: 60px 0;
+  padding: 20px;
 }
 
-#courses h1 {
-font-size: 2.5rem; /* Larger font size for title */
-font-weight: 800; /* Thicker font for better visibility */
-margin-bottom: 20px; /* Space below the title */
-color: #ffffff; /* Ensure title is pure white for high contrast */
+.card-row {
+  margin-bottom: 40px; /* Adjust space between rows */
+}
+
+.card-row h2 {
+  text-align: center; /* Center align the headings */
+  font-size: 2rem; /* Increase font size for better distinction */
+  font-weight: bold; /* Make the heading bold */
+  margin-bottom: 20px; /* Space below the headings */
+  color: #0056b3; /* Adjust heading color */
+}
+
+.card {
+  flex: 0 0 auto;
+  margin: 10px; /* Reduce the gap between the cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow to the cards */
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Hover effect for cards */
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2.5vw !important; /* Equal space between all cards */
+  /* flex-wrap: wrap; Ensure cards wrap when the screen size is small */
+}
+
+/* For smaller screens, adjust the layout */
+@media (max-width: 768px) {
+  .card-row {
+    display: block;
+  }
+
+  .card {
+    margin-bottom: 15px; /* Adjust bottom margin for smaller screens */
+  }
 }
 
 /* Card styling */
 .card {
-border: none;
-border-radius: 15px;
-overflow: hidden;
-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  max-width: 400px; /* Fixed max width for consistency */
+  margin: 0 auto; /* Center align the card */
 }
 
 /* Card hover effect */
 .card:hover {
-transform: scale(1.05);
-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card:hover .card-img-top {
-transform: scale(1.1);
-opacity: 0.9;
+  transform: scale(1.1);
+  opacity: 0.9;
 }
 
 /* Image styling */
 .card-img-top {
-width: 100%;
-height: 200px;
-object-fit: cover;
-transition: transform 0.4s ease, opacity 0.4s ease;
-border-bottom: 5px solid #f8f8f8;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  border-bottom: 5px solid #f8f8f8;
 }
 
 /* Card body styling */
 .card-body {
-text-align: center;
-padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 .card-title {
-font-size: 1.5rem;
-font-weight: 600;
-color: #333;
-margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
 }
 
 .card-text {
-font-size: 1rem;
-color: #555;
-margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 /* Button styling */
 .btn-primary {
-background-color: #007bff;
-color: #fff;
-padding: 10px 20px;
-border-radius: 50px;
-transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-primary:hover {
-background-color: #0056b3;
-transform: scale(1.1);
+  background-color: #0056b3;
+  transform: scale(1.1);
 }
 
 /* Responsive layout adjustments */
 @media (max-width: 768px) {
-#courses h1 {
+  #courses h1 {
     font-size: 2rem;
-}
+  }
 
-.card-title {
+  .card-title {
     font-size: 1.3rem;
-}
+  }
 
-.card-text {
+  .card-text {
     font-size: 0.9rem;
-}
+  }
 
-.btn-primary {
+  .btn-primary {
     padding: 8px 16px;
+  }
 }
-}
-  

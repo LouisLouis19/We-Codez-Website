@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./FAQ.css"; // Add custom CSS for styling the FAQ section
+import "./FAQ.css"; // Custom CSS for minimal styling
 
 const faqData = [
   {
@@ -35,14 +35,10 @@ const faqData = [
 ];
 
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState(null); // Track which question is open
+  const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAnswer = (index) => {
-    if (openIndex === index) {
-      setOpenIndex(null); // Close the answer if it's already open
-    } else {
-      setOpenIndex(index); // Open the clicked question's answer
-    }
+    setOpenIndex(openIndex === index ? null : index);
   };
 
   return (

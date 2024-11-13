@@ -6,7 +6,7 @@ function About() {
   return (
     <div id="about">
       <AboutSection
-        name="Welcoming you to the world of Coding Education"
+        name="Welcoming You to The World of Coding Education"
         imgsrc={web}
         visit="courses"
         btname="Our Courses"

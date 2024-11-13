@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll"; // Import Link from react-scroll
-import './Navbar.css'; // Import custom CSS
+import "./Navbar.css"; // Import custom CSS
 
 function Navbar() {
   return (
@@ -35,12 +35,37 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="courses" smooth={true} duration={500} className="nav-link">
+            <Link
+              to="testimonial"
+              smooth={true}
+              duration={500}
+              className="nav-link"
+            >
+              Testimonial
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="courses"
+              smooth={true}
+              duration={500}
+              className="nav-link"
+            >
               Courses
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="contact" smooth={true} duration={500} className="nav-link">
+            <Link to="blog" smooth={true} duration={500} className="nav-link">
+              Blogs
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="nav-link"
+            >
               Contact
             </Link>
           </li>

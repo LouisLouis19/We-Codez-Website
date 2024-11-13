@@ -1,18 +1,23 @@
-/* PythonCourse.css */
-.python-course-section {
-  padding: 40px 20px;
-  background-color: #f4f4f9;
+.course-section {
   font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.course-header {
-  text-align: center;
-  margin-bottom: 40px;
+.course-header,
+.course-details,
+.class-schedule,
+.pricing-section,
+.cta-section {
+  margin-bottom: 2rem;
 }
 
 .course-header h1 {
   font-size: 2.5rem;
-  color: #333;
+  margin-bottom: 0.5rem;
+  color: #008080;
 }
 
 .course-header p {
@@ -20,79 +25,72 @@
   color: #666;
 }
 
-.course-details,
-.class-schedule,
-.pricing-section {
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .course-details h2,
 .class-schedule h2,
-.pricing-section h2 {
+.pricing-section h2,
+.cta-section h2 {
   font-size: 2rem;
-  color: #2d3a3a;
+  color: #008080;
+}
+
+.course-details p,
+.class-schedule p,
+.pricing-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
+  margin: 1rem 0;
 }
 
-ul li {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 10px;
+li {
+  font-size: 1rem;
+  padding: 0.3rem 0;
 }
 
 .pricing-plans {
   display: flex;
   justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .plan {
-  flex: 1;
-  background-color: #e3f2fd;
-  padding: 20px;
+  background-color: #f5f5f5;
+  padding: 1.5rem;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
 }
 
 .plan h3 {
-  font-size: 1.5rem;
-  color: #1976d2;
-}
-
-.plan p {
-  font-size: 1.1rem;
-  color: #555;
+  color: #008080;
+  margin-bottom: 0.5rem;
 }
 
 .cta-section {
   text-align: center;
-  margin-top: 40px;
-}
-
-.cta-section h2 {
-  font-size: 2rem;
-  color: #2d3a3a;
 }
 
 .cta-button {
-  background-color: #1976d2;
+  background-color: #008080;
   color: white;
-  padding: 15px 30px;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #1565c0;
+  background-color: #006666;
 }

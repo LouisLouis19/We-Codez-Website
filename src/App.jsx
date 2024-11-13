@@ -8,8 +8,6 @@ import About from "./About";
 import Contact from "./Contact";
 import Courses from "./Courses";
 import Testimonial from "./Testimonial";
-import Slideshow from "./Slideshow";
-import InstructorProfile from "./InstructorProfile";
 import BlogPost from "./BlogPost";
 import BlogPostLearnPython from "./Blogs/BlogPostLearnPython";
 
@@ -25,17 +23,11 @@ function MainPage() {
   return (
     <>
       <Navbar />
-      <div>
-        <Slideshow />
-      </div>
       <div id="home">
         <Home />
       </div>
       <div id="about">
         <About />
-      </div>
-      <div id="instructor-profile">
-        <InstructorProfile />
       </div>
       <div id="testimonial">
         <Testimonial />
