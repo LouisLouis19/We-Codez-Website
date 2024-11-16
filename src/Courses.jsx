@@ -51,7 +51,7 @@ const classTypes = [
 
 const enterprisePackages = [
   {
-    title: "Schools / Enterprises Collaboration",
+    title: "Schools / Enterprises",
     imgsrc: img6,
     description:
       "Partner with us to empower your school or organization with essential tech skills.",
@@ -91,7 +91,7 @@ const Courses = () => {
 
             {/* Third Row for Enterprise / Schools */}
             <div className="card-row mt-4">
-              <h2>Collaborations</h2>
+              <h2>Professional Collaborations</h2>
               <div className="cards-wrapper">
                 {enterprisePackages.map((packageItem, index) => (
                   <Card key={index} {...packageItem} className="card mx-2" />
