@@ -94,6 +94,7 @@
 /* Text Animation */
 .animated-code {
   line-height: 1.6;
+  background-color: #1e1e1e;
 }
 
 @media (max-width: 768px) {

@@ -1,6 +1,6 @@
 import React from "react";
 import AboutSection from "./AboutSection";
-import web from "../src/Pictures/img3.png";
+import web from "../src/Pictures/batik.jpg";
 
 function About() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import HomeSection from "./HomeSection";
-import web from "../src/Pictures/img2.png";
+import web from "../src/Pictures/batik.jpg";
 
 function Home() {
   return (

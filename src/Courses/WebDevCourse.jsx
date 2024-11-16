@@ -1,89 +1,160 @@
 import React from "react";
-import "./CourseDetails.css"; // Import the CSS file for styling
+import { motion } from "framer-motion";
+import "./CourseDetails.css";
+import img from "../Pictures/Courses-Website_Development.jpeg";
+import { Link } from "react-router-dom"; // Use this if using React Router for navigation
 
 const WebDevCourse = () => {
   return (
     <section className="course-section">
-      <div className="course-header">
-        <h1>Web Development Course</h1>
-        <p>
-          Learn full-stack web development from scratch, including front-end and
-          back-end technologies, with hands-on projects!
-        </p>
-      </div>
+      {/* Back to Home Arrow */}
+      <motion.div
+        className="back-to-home"
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        <Link to="/" className="back-link">
+          ← Back to Home
+        </Link>
+      </motion.div>
 
-      {/* Course Details Section */}
-      <div className="course-details">
+      {/* Course Header with Image */}
+      <motion.div
+        className="course-header"
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="course-banner">
+          <img
+            src={img} // Replace with actual image URL
+            alt="Web Development"
+            className="course-image"
+          />
+        </div>
+        <h1>Website Development Course</h1>
+        <p>
+          Build stunning websites from scratch using the latest tools and
+          technologies. This course covers everything you need to know to become
+          a proficient web developer.
+        </p>
+      </motion.div>
+
+      {/* Course Structure Section */}
+      <motion.div
+        className="course-details"
+        initial={{ opacity: 0, x: -30 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+      >
         <h2>Course Structure</h2>
         <p>
-          This course is designed for beginners and intermediate learners.
-          Here's what we cover:
+          Learn the foundations of web development through engaging lessons and
+          hands-on projects. Here's the course outline:
         </p>
         <ul>
-          <li>Introduction to Web Development</li>
-          <li>HTML5 & CSS3 Fundamentals</li>
-          <li>Responsive Web Design</li>
-          <li>JavaScript Basics & DOM Manipulation</li>
-          <li>Version Control with Git & GitHub</li>
-          <li>Front-End Frameworks (React, Vue, Angular)</li>
-          <li>Back-End Development (Node.js, Express)</li>
-          <li>Databases (SQL, NoSQL, MongoDB)</li>
-          <li>Building Full-Stack Web Applications</li>
+          <li>
+            <strong>HTML & CSS</strong> — Master the building blocks of web
+            design.
+          </li>
+          <li>
+            <strong>JavaScript Basics</strong> — Add interactivity and logic to
+            your sites.
+          </li>
+          <li>
+            <strong>Responsive Design</strong> — Create websites that look great
+            on all devices.
+          </li>
+          <li>
+            <strong>Frontend Frameworks</strong> — Get started with React for
+            dynamic web apps.
+          </li>
+          <li>
+            <strong>Backend Development</strong> — Learn Node.js and Express.js
+            to build APIs.
+          </li>
+          <li>
+            <strong>Database Integration</strong> — Work with MongoDB to store
+            and manage data.
+          </li>
+          <li>
+            <strong>Final Project</strong> — Build a complete website showcasing
+            your skills.
+          </li>
         </ul>
-      </div>
+      </motion.div>
 
-      {/* Class Schedule */}
-      <div className="class-schedule">
-        <h2>Class Schedule</h2>
-        <p>Our classes are held every week. Here’s the schedule:</p>
-        <ul>
-          <li>Week 1: Introduction to Web Development & HTML</li>
-          <li>Week 2: CSS for Styling & Layouts</li>
-          <li>Week 3: JavaScript Fundamentals & DOM Manipulation</li>
-          <li>Week 4: Front-End Frameworks (React/Vue/Angular)</li>
-          <li>Week 5: Back-End Development with Node.js</li>
-          <li>Week 6: Databases and Full-Stack Web Apps</li>
-          <li>Week 7: Version Control & GitHub</li>
-          <li>Week 8: Final Project & Review</li>
-        </ul>
-      </div>
-
-      {/* Pricing Section */}
-      <div className="pricing-section">
-        <h2>Pricing</h2>
-        <p>Choose the plan that suits you best:</p>
-        <div className="pricing-plans">
-          <div className="plan">
-            <h3>Private Lessons</h3>
-            <p>$60/hour</p>
-            <p>One-on-one personalized lessons with the instructor.</p>
+      {/* Class Arrangement Section */}
+      <motion.div
+        className="class-arrangement"
+        initial={{ opacity: 0, x: 30 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.4, duration: 0.5 }}
+      >
+        <h2>Class Arrangement</h2>
+        <p>Flexible learning options to suit your needs:</p>
+        <div className="class-options">
+          <div className="option">
+            <h3>Self-Paced Learning</h3>
+            <p>Access pre-recorded lessons anytime, anywhere.</p>
           </div>
-          <div className="plan">
-            <h3>Semi-Private Lessons</h3>
-            <p>$40/hour</p>
-            <p>
-              Small group sessions (2-3 students) for collaborative learning.
-            </p>
+          <div className="option">
+            <h3>Live Sessions</h3>
+            <p>Participate in interactive live classes with Q&A sessions.</p>
           </div>
-          <div className="plan">
-            <h3>Group Lessons</h3>
-            <p>$25/hour</p>
+          <div className="option">
+            <h3>Hybrid Model</h3>
             <p>
-              Learn in a larger group setting (4+ students) for a more
-              affordable option.
+              Combine self-paced modules with live sessions for the best of both
+              worlds.
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
+
+      {/* Pricing Section */}
+      <motion.div
+        className="pricing-section"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6, duration: 0.5 }}
+      >
+        <h2>Pricing</h2>
+        <p>Choose your preferred plan:</p>
+        <div className="pricing-plans">
+          <div className="plan">
+            <h3>Private Lessons</h3>
+            <p>$70/hour</p>
+            <p>One-on-one guidance tailored to your goals.</p>
+          </div>
+          <div className="plan">
+            <h3>Semi-Private Lessons</h3>
+            <p>$50/hour</p>
+            <p>Learn in small groups for collaborative experience.</p>
+          </div>
+          <div className="plan">
+            <h3>Group Lessons</h3>
+            <p>$30/hour</p>
+            <p>Affordable learning in a classroom-style environment.</p>
+          </div>
+        </div>
+      </motion.div>
 
       {/* Call to Action Section */}
-      <div className="cta-section">
-        <h2>Ready to Start Learning?</h2>
+      <motion.div
+        className="cta-section"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.8, duration: 0.5 }}
+      >
+        <h2>Start Your Web Development Journey!</h2>
         <p>
-          Join the Web Development course today and build your career in tech!
+          Take the leap into the exciting world of web development. Enroll now
+          and create amazing websites!
         </p>
         <button className="cta-button">Enroll Now</button>
-      </div>
+      </motion.div>
     </section>
   );
 };

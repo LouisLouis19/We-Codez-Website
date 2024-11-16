@@ -9,7 +9,7 @@ function HomeSection({ name, visit, btname }) {
 
   const [text] = useTypewriter({
     words: [
-      'print("Welcome to We Codez!")\n\nVision="Empowering Next-Gen Coders"\nMission = "Provide high-quality coding education"\n\n# Let\'s code!\nprint("Begin your coding journey with us!")',
+      'print("Welcome to We Codez!")\n\n Vision="Empowering Next-Gen Coders"\n Mission = "Provide high-quality coding education"\n\n # Let\'s code!\n print("Begin your coding journey with us!")',
     ],
     loop: true,
     delaySpeed: 1500,

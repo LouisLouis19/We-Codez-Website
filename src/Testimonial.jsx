@@ -11,28 +11,28 @@ import student4 from "./Pictures/Student-4.jpeg";
 const testimonials = [
   {
     id: 1,
-    name: "Student 1",
+    name: "Marshya",
     feedback:
       "Joining we codez programming class was one of the best decisions I've made! At first, I was a bit intimidated by coding, but the instructor (Ka Louis) broke down everything step-by-step, making even complex concepts easier to understand. The coding exercises helped me apply what I learned and the supportive friends in class made it even more enjoyable. Whether you're a complete beginner or looking to sharpen your skills, this class is perfect. I’m now feel confident tackling coding challenges on my own, and I'm excited to keep learning and building my skills. Highly recommended!😋🔥",
     avatar: student1,
   },
   {
     id: 2,
-    name: "Student 2",
+    name: "Sarisha",
     feedback:
       "This coding class is very perfect for beginners! I started with no experience or knowledge and was so nervous at first but the lessons made everything easy to understand!! The learning technique is super fun and full of laughs too!! Ka Louis is always available if you need help with coding or if you don’t understand the material. Highly recommended for beginners and anyone looking to expand their skills.",
     avatar: student2,
   },
   {
     id: 3,
-    name: "Student 3",
+    name: "Edna",
     feedback:
       "Great for beginners, even those starting from 0. Classes are fun and engaging, making it feel more like a discussion than a lecture. Recommended for those who want a general understanding to what coding is and how it works, but the teacher is also very willing to dive into specifics when asked.",
     avatar: student3,
   },
   {
     id: 4,
-    name: "Student 4",
+    name: "Stephanie",
     feedback:
       "For someone who wants to study coding, this can be an opportunity for you to start. We Codez has helped a lot in my journey, It provides helpful and simple explanations where you can understand even the most complicated-looking code. If you want to practice coding, then I suggest We Codez.",
     avatar: student4,

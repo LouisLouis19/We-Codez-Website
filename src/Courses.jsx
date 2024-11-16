@@ -12,19 +12,22 @@ const programmingCourses = [
   {
     title: "Python Programming",
     imgsrc: img1,
-    description: "Master Python, the programming language of the future.",
+    description:
+      "Master Python: An exciting way to start coding, and gain valuable skills for today’s world",
     linkTo: "/course-details/python-course",
   },
   {
     title: "Golang Programming",
     imgsrc: img2,
-    description: "Learn Golang and build fast, scalable applications.",
+    description:
+      "Learn Golang to dive into efficient, high-performance coding, and start building robust apps with ease",
     linkTo: "/course-details/golang-course",
   },
   {
     title: "Website Development",
     imgsrc: img3,
-    description: "Create stunning websites with HTML, CSS, and JavaScript.",
+    description:
+      "Dive into website development and gain the skills to create interactive, professional websites",
     linkTo: "/course-details/webdev-course",
   },
 ];
@@ -33,22 +36,25 @@ const classTypes = [
   {
     title: "Semi-Private Classes",
     imgsrc: img4,
-    description: "Get personalized attention in a small class.",
+    description:
+      "Experience personalized guidance in an intimate class setting, ensuring focused learning",
     linkTo: "/semi-private-section",
   },
   {
     title: "Group Classes",
     imgsrc: img5,
-    description: "Learn in a collaborative group setting.",
+    description:
+      "Engage in dynamic, collaborative learning with peers, fostering teamwork and shared growth",
     linkTo: "/group-section",
   },
 ];
 
 const enterprisePackages = [
   {
-    title: "Schools/Enterprises",
+    title: "Schools / Enterprises Collaboration",
     imgsrc: img6,
-    description: "Partner with us for educational and corporate training.",
+    description:
+      "Partner with us to empower your school or organization with essential tech skills.",
     linkTo: "/schools-enterprises",
   },
 ];
@@ -85,7 +91,7 @@ const Courses = () => {
 
             {/* Third Row for Enterprise / Schools */}
             <div className="card-row mt-4">
-              <h2>Enterprise / Schools</h2>
+              <h2>Collaborations</h2>
               <div className="cards-wrapper">
                 {enterprisePackages.map((packageItem, index) => (
                   <Card key={index} {...packageItem} className="card mx-2" />

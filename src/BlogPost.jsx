@@ -6,53 +6,6 @@ import img1 from "./Pictures/Blog-Learning_Python_From_Scratch.jpg";
 import img2 from "./Pictures/Blog-What_Programming_Language.jpg";
 import img3 from "./Pictures/Blog-Learning_With_Others.jpg";
 
-// function BlogList() {
-//   const blogPosts = [
-//     {
-//       id: "learn-python",
-//       title: "Learning Python for Beginners: A Complete Guide",
-//       readTime: "10-min read",
-//       image: img1, // Replace with an actual image URL
-//     },
-//     {
-//       id: "programming-language-to-learn",
-//       title: "What Programming Language to Learn?",
-//       readTime: "8-min read",
-//       image: img2, // Replace with an actual image URL
-//     },
-//     {
-//       id: "learning-with-others",
-//       title: "The Importance of Learning Coding with Others",
-//       readTime: "5-min read",
-//       image: img3, // Replace with an actual image URL
-//     },
-//   ];
-
-//   return (
-//     <section className="blog-list">
-//       <div className="my-5">
-//         <h1 className="typewriter section-title">We Codez Blogs</h1>{" "}
-//         {/* Typewriter effect on title */}
-//       </div>
-//       {blogPosts.map((post) => (
-//         <div key={post.id} className="blog-card">
-//           <img src={post.image} alt={post.title} />
-//           <br />
-//           <h4>{post.title}</h4>
-//           <br />
-//           <div className="blog-meta">
-//             <span className="read-time">{post.readTime}</span>
-//           </div>
-//           <br />
-//           <Link to={`/blog/${post.id}`} className="read-more">
-//             Read More
-//           </Link>
-//         </div>
-//       ))}
-//     </section>
-//   );
-// }
-
 function BlogList() {
   const blogPosts = [
     {
