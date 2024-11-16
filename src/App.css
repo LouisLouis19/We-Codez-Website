@@ -19,7 +19,7 @@ body {
 
   /* Relative positioning to enable ::before pseudo-element */
   position: relative;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.94);
 }
 
 body::before {
