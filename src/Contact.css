@@ -4,7 +4,6 @@
   margin: 50px auto;
   padding: 30px;
   color: #e0e0e0;
-  background-color: #1a1a1a;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
   font-family: Arial, sans-serif;
@@ -45,30 +44,6 @@
   box-shadow: 0px 0px 6px rgba(52, 152, 219, 0.4);
 }
 
-/* Submit Button Styling */
-.contact-section button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 15px;
-  background-color: #3498db;
-  color: white;
-  font-weight: 600;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-/* Button Hover and Active Effects */
-.contact-section button:hover {
-  background-color: #2980b9;
-}
-
-.contact-section button:active {
-  transform: scale(0.98);
-  background-color: #2575a1;
-}
-
 /* Spacing Between Form Elements */
 .contact-section .space-y-6 > *:not(:last-child) {
   margin-bottom: 20px;
@@ -89,4 +64,37 @@
   .contact-section h1 {
     font-size: 1.75rem;
   }
+}
+
+.btn-submit {
+  padding: 12px 25px; /* Sufficient padding for the button */
+  transition: background-color 0.4s, transform 0.3s;
+  color: #007bff;
+  border: 2px solid #0056b3;
+  background-color: transparent !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px; /* Rounded corners for the button */
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  letter-spacing: 1px !important;
+}
+
+.btn-submit:hover {
+  background: #0056b3 !important;
+  color: #fff;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center; /* Centers the social media icons horizontally */
+  gap: 10vw; /* Adds space between the icons */
+  margin-top: 5vh; /* Adds some space above the icons */
+}
+
+.social-icon {
+  transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+.social-icon:hover {
+  transform: scale(1.25); /* Slight zoom effect on hover */
 }

@@ -2,47 +2,101 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./BlogPost.css"; // Import custom CSS for styling the blog posts
+import img1 from "./Pictures/Blog-Learning_Python_From_Scratch.jpg";
+import img2 from "./Pictures/Blog-What_Programming_Language.jpg";
+import img3 from "./Pictures/Blog-Learning_With_Others.jpg";
+
+// function BlogList() {
+//   const blogPosts = [
+//     {
+//       id: "learn-python",
+//       title: "Learning Python for Beginners: A Complete Guide",
+//       readTime: "10-min read",
+//       image: img1, // Replace with an actual image URL
+//     },
+//     {
+//       id: "programming-language-to-learn",
+//       title: "What Programming Language to Learn?",
+//       readTime: "8-min read",
+//       image: img2, // Replace with an actual image URL
+//     },
+//     {
+//       id: "learning-with-others",
+//       title: "The Importance of Learning Coding with Others",
+//       readTime: "5-min read",
+//       image: img3, // Replace with an actual image URL
+//     },
+//   ];
+
+//   return (
+//     <section className="blog-list">
+//       <div className="my-5">
+//         <h1 className="typewriter section-title">We Codez Blogs</h1>{" "}
+//         {/* Typewriter effect on title */}
+//       </div>
+//       {blogPosts.map((post) => (
+//         <div key={post.id} className="blog-card">
+//           <img src={post.image} alt={post.title} />
+//           <br />
+//           <h4>{post.title}</h4>
+//           <br />
+//           <div className="blog-meta">
+//             <span className="read-time">{post.readTime}</span>
+//           </div>
+//           <br />
+//           <Link to={`/blog/${post.id}`} className="read-more">
+//             Read More
+//           </Link>
+//         </div>
+//       ))}
+//     </section>
+//   );
+// }
 
 function BlogList() {
   const blogPosts = [
     {
       id: "learn-python",
-      title: "Learning Python from Scratch: A Complete Guide for Beginners",
+      title: "Learning Python for Beginners: A Complete Guide",
       readTime: "10-min read",
-      image: "/images/python_blog.jpg", // Replace with an actual image URL
+      image: img1,
     },
     {
       id: "programming-language-to-learn",
-      title: "What Programming Language to Learn? The Ultimate Guide",
+      title: "What Programming Language to Learn?",
       readTime: "8-min read",
-      image: "/images/language_blog.jpg", // Replace with an actual image URL
+      image: img2,
     },
     {
       id: "learning-with-others",
-      title: "The Importance of Learning with Others in Coding",
+      title: "The Importance of Learning Coding with Others",
       readTime: "5-min read",
-      image: "/images/learning_blog.jpg", // Replace with an actual image URL
+      image: img3,
     },
   ];
 
   return (
     <section className="blog-list">
+      {/* Section Title */}
       <div className="my-5">
-        <h1 className="typewriter">We Codez Blogs</h1>{" "}
-        {/* Typewriter effect on title */}
+        <h1 className="typewriter section-title">We Codez Blogs</h1>{" "}
       </div>
-      {blogPosts.map((post) => (
-        <div key={post.id} className="blog-card">
-          <img src={post.image} alt={post.title} />
-          <h2>{post.title}</h2>
-          <div className="blog-meta">
-            <span className="read-time">{post.readTime}</span>
+
+      {/* Cards Container */}
+      <div className="cards-container">
+        {blogPosts.map((post) => (
+          <div key={post.id} className="blog-card">
+            <img src={post.image} alt={post.title} />
+            <h4>{post.title}</h4>
+            <div className="blog-meta">
+              <span className="read-time">{post.readTime}</span>
+            </div>
+            <Link to={`/blog/${post.id}`} className="read-more">
+              Read More
+            </Link>
           </div>
-          <Link to={`/blog/${post.id}`} className="read-more">
-            Read More
-          </Link>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 }

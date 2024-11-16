@@ -1,13 +1,31 @@
 /* Blog List Section */
 .blog-list {
-  display: flex;
-  overflow-x: auto;
-  padding: 2rem;
+  display: flex; /* Flexbox layout for title and cards on the same row */
+  align-items: flex-start; /* Align items to the top of the row */
+  gap: 2rem; /* Space between the title and the cards */
+  padding: 2rem 1rem; /* Add padding for better spacing */
   max-width: 100%;
   margin: 0 auto;
-  justify-content: flex-start;
-  gap: 1.5rem;
-  animation: fadeIn 1s ease-out;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 1.5rem; /* Space between cards */
+  scroll-snap-type: x mandatory; /* Snap cards into position */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+  flex: 1; /* Take up remaining space in the row */
+  padding-bottom: 1rem; /* Add some space below cards */
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for cleaner look */
+}
+
+.cards-container {
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE */
 }
 
 /* Blog Card Styling */
@@ -24,8 +42,13 @@
   justify-content: space-between;
   text-align: center;
   color: #e0e0e0;
-  animation: cardBounce 0.5s ease-in-out;
-  flex-shrink: 0;
+  flex-shrink: 0; /* Prevent cards from shrinking */
+  scroll-snap-align: start; /* Snap cards to the start of the viewport */
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
 }
 
 .blog-card:hover {

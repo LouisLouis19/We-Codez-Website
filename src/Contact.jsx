@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css"; // Minimal CSS for additional styling if needed
+import { FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -44,7 +45,7 @@ function Contact() {
       id="contact"
       className="contact-section bg-gray-900 text-white py-16 px-6 lg:px-8 rounded-lg shadow-md max-w-lg mx-auto"
     >
-      <h1 className="text-3xl font-bold text-center mb-8">Contact Us</h1>
+      <h1 className="section-title">Contact Us</h1>
 
       <form className="space-y-6">
         <div>
@@ -123,15 +124,37 @@ function Contact() {
         </div>
 
         <div className="text-center pt-4">
-          <button
-            onClick={onClickButton}
-            className="w-full py-3 px-6 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-md shadow-md transition-all duration-200"
-            type="submit"
-          >
-            Submit
+          <button onClick={onClickButton} className="btn-submit" type="submit">
+            SUBMIT
           </button>
         </div>
       </form>
+      <div className="social-media">
+        <a
+          href="https://www.instagram.com/we_codez/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+        >
+          <FaInstagram size={50} color="#E1306C" />
+        </a>
+        <a
+          href="https://wa.me/message/BYSUKYFMAQPLA1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+        >
+          <FaWhatsapp size={50} color="#25D366" />
+        </a>
+        <a
+          href="mailto:andreaslouis.business@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+        >
+          <FaEnvelope size={50} color="#D44638" />
+        </a>
+      </div>
     </section>
   );
 }

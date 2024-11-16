@@ -1,7 +1,11 @@
-Common.css .common-section {
+.common-section {
   color: #f8f9fa; /* Light text color for contrast */
-  padding: 60px 0; /* Increased padding */
-  min-height: 100vh; /* Full height section */
+  padding: 80px 0; /* Increase top and bottom padding */
+  min-height: 120vh; /* Increase minimum height for larger content */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center horizontally */
 }
 
 .common-title {
@@ -20,21 +24,6 @@ Common.css .common-section {
   margin-bottom: 30px; /* Space below subtitle */
   font-weight: 600; /* Semi-bold font weight */
   color: #e0e0e0; /* Light gray for better contrast */
-}
-
-.btn-get-started {
-  background-color: #007bff; /* Blue button */
-  color: #fff; /* White text on button */
-  padding: 10px 20px; /* Padding for button */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 1rem; /* Font size for button */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
-}
-
-.btn-get-started:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  transform: translateY(-2px); /* Lift effect on hover */
 }
 
 .header-img img {
@@ -82,23 +71,16 @@ Common.css .common-section {
   position: relative;
 }
 
-.logo-container {
-  max-width: 150px; /* Set a max width to make the logo responsive */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .logo {
   max-width: 100%;
   border-radius: 10px; /* Round the edges */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); Subtle shadow effect*/
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .logo:hover {
-  transform: scale(1.1); /* Slight zoom effect */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: scale(1.25); /* Slight zoom effect */
+  /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); Enhanced shadow on hover */
 }
 
 .common-title {
@@ -135,7 +117,6 @@ Common.css .common-section {
   font-size: 1.2rem;
   line-height: 1.8;
   color: #ffffff;
-  background: rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
@@ -143,7 +124,7 @@ Common.css .common-section {
 }
 
 .logo-container img {
-  max-width: 200px; /* Adjust based on your logo size */
+  max-width: 250px; /* Adjust based on your logo size */
   height: auto;
 }
 
@@ -176,7 +157,6 @@ Common.css .common-section {
 
 /* General Dark Theme Styling */
 .common-section {
-  background-color: #121212;
   color: #dcdcdc;
   padding: 100px 0;
   min-height: 100vh;
@@ -189,13 +169,13 @@ Common.css .common-section {
 .logo-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 5vh;
 }
 
 .logo {
-  max-width: 120px;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  max-width: 40vw;
+  border-radius: 2.5rem;
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); */
 }
 
 /* Typewriter Effect Text Styling */
@@ -239,18 +219,97 @@ Common.css .common-section {
   margin-bottom: 1.5rem;
 }
 
-/* Button Styling */
-.btn-get-started {
-  background-color: #007bff;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+@media (max-width: 767px) {
+  /* Stack sections vertically */
+  .row {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align elements */
+  }
+
+  /* Center the logo and title for smaller screens */
+  .logo-container {
+    margin-bottom: 2rem; /* Space below the logo */
+    text-align: center;
+  }
+
+  .common-title {
+    font-size: 1.8rem; /* Reduce title size */
+    margin-bottom: 1.5rem; /* Space below title */
+    text-align: center;
+  }
+
+  .cursor {
+    font-size: 1.8rem; /* Match title size */
+  }
+
+  .logo {
+    max-width: 60%; /* Adjust size of the logo */
+  }
+
+  /* Button adjustments */
+  .btn-get-started {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
 }
 
-.btn-get-started:hover {
-  background-color: #21847d;
-  transform: translateY(-4px);
+@media (max-width: 767px) {
+  .common-section {
+    padding: 100px 20px; /* Increase padding on smaller screens */
+    min-height: 140vh; /* Provide more space for stacked content */
+  }
+
+  .row {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center items */
+  }
+
+  .logo-container {
+    margin-bottom: 2rem; /* Add space below the logo */
+  }
+
+  .common-title {
+    font-size: 2rem; /* Slightly larger for better visibility */
+    margin-bottom: 2rem; /* Add spacing below title */
+    text-align: center;
+  }
+
+  .common-description {
+    margin-top: 2rem; /* Add space above description */
+    font-size: 1.1rem; /* Adjust text size */
+    padding: 25px; /* Add padding for better spacing */
+    background-color: rgba(30, 30, 30, 0.8); /* Maintain background contrast */
+    margin-bottom: 10vh;
+  }
+}
+
+.common-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center; /* Aligns the button and icons vertically */
+}
+
+.ml-auto {
+  margin-left: auto; /* Pushes the social icons to the right */
+}
+
+.social-icons {
+  display: flex;
+  gap: 2.75vw; /* Space between icons */
+  margin-left: 5vw; /* Adds some space between the button and icons */
+}
+
+.social-icon {
+  color: inherit; /* Inherit color from the icon */
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.25); /* Slight zoom effect on hover */
 }

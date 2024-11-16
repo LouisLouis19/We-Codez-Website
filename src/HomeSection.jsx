@@ -9,10 +9,10 @@ function HomeSection({ name, visit, btname }) {
 
   const [text] = useTypewriter({
     words: [
-      "console.log('Welcome to We Codez!')\nconst mission = 'Empowering Coders';\nfunction startJourney() { /* Let's code! */ }",
+      'print("Welcome to We Codez!")\n\nVision="Empowering Next-Gen Coders"\nMission = "Provide high-quality coding education"\n\n# Let\'s code!\nprint("Begin your coding journey with us!")',
     ],
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 1500,
   });
 
   useEffect(() => {
@@ -53,21 +53,21 @@ function HomeSection({ name, visit, btname }) {
                 </div>
               </div>
 
-              {/* Right Side Code Animation */}
-              <div className="col-lg-6 order-1 order-lg-2 code-animation">
+              <div className="col-lg-6 order-1 order-lg-2">
                 <div
-                  className="code-box"
+                  className="laptop-container"
                   style={{ transform: `translateY(${offset * 0.1}px)` }}
                 >
-                  <code className="animated-code">
-                    {/* Replace \n with <br /> for line breaks */}
-                    {text.split("\n").map((line, index) => (
-                      <span key={index}>
-                        {line}
-                        <br />
-                      </span>
-                    ))}
-                  </code>
+                  <div className="laptop-screen">
+                    <code className="animated-code">
+                      {text.split("\n").map((line, index) => (
+                        <span key={index}>
+                          {line}
+                          <br />
+                        </span>
+                      ))}
+                    </code>
+                  </div>
                 </div>
               </div>
             </div>

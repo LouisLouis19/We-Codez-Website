@@ -43,12 +43,12 @@ const FAQ = () => {
 
   return (
     <section className="faq-section">
-      <h2 className="faq-title">Frequently Asked Questions</h2>
+      <h1 className="faq-title section-title">Frequently Asked Questions</h1>
       <div className="faq-container">
         {faqData.map((faq, index) => (
           <div key={index} className="faq-item">
             <div className="faq-question" onClick={() => toggleAnswer(index)}>
-              <h3>{faq.question}</h3>
+              <h3 className="faq-question">{faq.question}</h3>
               <span className={`arrow ${openIndex === index ? "open" : ""}`}>
                 &#9660;
               </span>
