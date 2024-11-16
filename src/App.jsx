@@ -18,6 +18,9 @@ import FAQ from "./FAQ";
 import PythonCourse from "./Courses/PythonCourse";
 import GolangCourse from "./Courses/GolangCourse";
 import WebDevCourse from "./Courses/WebDevCourse";
+import SemiPrivateClass from "./Courses/SemiPrivateClass";
+import GroupClass from "./Courses/GroupClass";
+import ProfessionalCollaboration from "./Courses/ProfessionalCollaboration";
 
 function MainPage() {
   return (
@@ -66,6 +69,15 @@ function App() {
       <Route path="/course-details/python-course" element={<PythonCourse />} />
       <Route path="/course-details/golang-course" element={<GolangCourse />} />
       <Route path="/course-details/webdev-course" element={<WebDevCourse />} />
+      <Route
+        path="/course-details/semiprivate"
+        element={<SemiPrivateClass />}
+      />
+      <Route path="/course-details/groupclass" element={<GroupClass />} />
+      <Route
+        path="/course-details/school-enterprise"
+        element={<ProfessionalCollaboration />}
+      />
     </Routes>
   );
 }

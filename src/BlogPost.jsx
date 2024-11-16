@@ -11,7 +11,7 @@ function BlogList() {
     {
       id: "learn-python",
       title: "Learning Python for Beginners: A Complete Guide",
-      readTime: "10-min read",
+      readTime: "3-min read",
       image: img1,
     },
     {

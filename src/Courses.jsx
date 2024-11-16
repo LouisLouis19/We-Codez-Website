@@ -38,14 +38,14 @@ const classTypes = [
     imgsrc: img4,
     description:
       "Experience personalized guidance in an intimate class setting, ensuring focused learning",
-    linkTo: "/semi-private-section",
+    linkTo: "/course-details/semiprivate",
   },
   {
     title: "Group Classes",
     imgsrc: img5,
     description:
       "Engage in dynamic, collaborative learning with peers, fostering teamwork and shared growth",
-    linkTo: "/group-section",
+    linkTo: "/course-details/groupclass",
   },
 ];
 
@@ -55,7 +55,7 @@ const enterprisePackages = [
     imgsrc: img6,
     description:
       "Partner with us to empower your school or organization with essential tech skills.",
-    linkTo: "/schools-enterprises",
+    linkTo: "/course-details/school-enterprise",
   },
 ];
 

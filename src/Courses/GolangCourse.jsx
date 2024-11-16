@@ -48,34 +48,30 @@ const GolangCourse = () => {
       >
         <h2>Course Structure</h2>
         <p>
-          Perfect for beginners and experienced developers alike, this course
-          blends theory with practical coding challenges. Here's what you'll
-          learn:
+          This course is perfect for beginners to learn their first programming
+          language or experienced developers looking to explore Go. It combines
+          fundamental theories with real-life projects to help you become
+          proficient in Go.
         </p>
+        <p>These are the concepts you will learn:</p>
         <ul>
           <li>
-            <strong>Introduction to Go</strong> — Learn Go syntax and
-            environment setup.
+            <strong>Introduction to Go</strong>
           </li>
           <li>
-            <strong>Data Structures</strong> — Explore slices, maps, and other
-            Go data types.
+            <strong>Data Structures</strong>
           </li>
           <li>
-            <strong>Control Flow and Functions</strong> — Master conditionals,
-            loops, and Go functions.
+            <strong>Control Flow and Functions</strong>
           </li>
           <li>
-            <strong>Concurrency in Go</strong> — Understand goroutines and
-            channels.
+            <strong>Concurrency in Go</strong>
           </li>
           <li>
-            <strong>Web Development with Go</strong> — Build web servers and
-            APIs using Go.
+            <strong>Package Management in Go</strong>
           </li>
           <li>
-            <strong>Hands-on Projects</strong> — Create a RESTful API, a simple
-            CLI tool, or a Go-based web application.
+            <strong>Hands-on Projects</strong>
           </li>
         </ul>
       </motion.div>
@@ -88,20 +84,31 @@ const GolangCourse = () => {
         transition={{ delay: 0.4, duration: 0.5 }}
       >
         <h2>Class Arrangement</h2>
-        <p>Choose the format that best suits your learning style:</p>
+        <p>
+          Our course is tailored to provide ultimate flexibility and
+          accessibility, ensuring you can progress and learn effectively in the
+          most optimal way.
+        </p>
         <div className="class-options">
           <div className="option">
-            <h3>Self-Paced Learning</h3>
-            <p>Study at your own pace with on-demand video lessons.</p>
-          </div>
-          <div className="option">
-            <h3>Live Sessions</h3>
-            <p>Participate in live coding classes for interactive learning.</p>
-          </div>
-          <div className="option">
-            <h3>Hybrid Model</h3>
+            <h3>Remote Learning</h3>
             <p>
-              Blend self-paced content with live sessions for optimal learning.
+              Participate in sessions from anywhere with just an internet
+              connection.
+            </p>
+          </div>
+          <div className="option">
+            <h3>1.5-Hour Sessions</h3>
+            <p>
+              Join engaging 1.5-hour engaging live sessions every week to learn
+              and practice.
+            </p>
+          </div>
+          <div className="option">
+            <h3>Extra Practice & Consultation</h3>
+            <p>
+              Get access to additional practice and consultations for support
+              beyond class hours.
             </p>
           </div>
         </div>
@@ -115,22 +122,26 @@ const GolangCourse = () => {
         transition={{ delay: 0.6, duration: 0.5 }}
       >
         <h2>Pricing</h2>
-        <p>Select the best plan for you:</p>
+        <p>
+          Choose from our class options to find the plan that suits you best.
+        </p>
         <div className="pricing-plans">
           <div className="plan">
-            <h3>Private Lessons</h3>
-            <p>$60/hour</p>
-            <p>One-on-one learning for personalized attention.</p>
-          </div>
-          <div className="plan">
-            <h3>Semi-Private Lessons</h3>
-            <p>$40/hour</p>
-            <p>Small group sessions for collaborative learning.</p>
+            <h3>Semi-Private</h3>
+            <p>300K / session</p>
+            <p>
+              Perfect for learning with a small group of up to 4 friends, these
+              lessons provide a tailored syllabus and personalized planning for
+              a customized learning experience.
+            </p>
           </div>
           <div className="plan">
             <h3>Group Lessons</h3>
-            <p>$25/hour</p>
-            <p>Budget-friendly learning in a larger group setting.</p>
+            <p>250K / session</p>
+            <p>
+              Perfect for those looking for a more affordable option to learn in
+              a larger group, following a fixed syllabus.
+            </p>
           </div>
         </div>
       </motion.div>
@@ -142,12 +153,17 @@ const GolangCourse = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.5 }}
       >
-        <h2>Join the Golang Revolution!</h2>
+        <h2>Ready to Start Learning?</h2>
         <p>
           Start your journey to mastering Go programming today. Enroll now and
-          elevate your coding skills!
+          become a skilled Go programmer!
         </p>
-        <button className="cta-button">Enroll Now</button>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSegGQ9KzA2q4egsOB9wiL1ph_qEeM2OAjD28i2RtL2dPDdpzA/viewform"
+          target="_blank"
+        >
+          <button className="cta-button">Enroll Now</button>
+        </a>
       </motion.div>
     </section>
   );

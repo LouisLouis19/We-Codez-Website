@@ -1,13 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./CourseDetails.css";
-import img from "../Pictures/Courses-Website_Development.jpeg";
-import { Link } from "react-router-dom"; // Use this if using React Router for navigation
+import img from "../Pictures/Courses-Website_Development.jpeg"; // Replace with actual image URL
+import { Link } from "react-router-dom";
 
 const WebDevCourse = () => {
   return (
     <section className="course-section">
-      {/* Back to Home Arrow */}
       <motion.div
         className="back-to-home"
         initial={{ opacity: 0, x: -20 }}
@@ -18,7 +17,6 @@ const WebDevCourse = () => {
           ← Back to Home
         </Link>
       </motion.div>
-
       {/* Course Header with Image */}
       <motion.div
         className="course-header"
@@ -33,11 +31,11 @@ const WebDevCourse = () => {
             className="course-image"
           />
         </div>
-        <h1>Website Development Course</h1>
+        <h1>Web Development Course</h1>
         <p>
-          Build stunning websites from scratch using the latest tools and
-          technologies. This course covers everything you need to know to become
-          a proficient web developer.
+          Learn how to build dynamic websites and web applications from scratch.
+          This course will guide you through the essential web development tools
+          and technologies needed to become a professional web developer.
         </p>
       </motion.div>
 
@@ -50,37 +48,28 @@ const WebDevCourse = () => {
       >
         <h2>Course Structure</h2>
         <p>
-          Learn the foundations of web development through engaging lessons and
-          hands-on projects. Here's the course outline:
+          This course is designed for beginners to learn the fundamentals of web
+          development and progress to building complex web applications.
         </p>
+        <p>These are the concepts you will learn:</p>
         <ul>
           <li>
-            <strong>HTML & CSS</strong> — Master the building blocks of web
-            design.
+            <strong>Introduction to Web Development</strong>
           </li>
           <li>
-            <strong>JavaScript Basics</strong> — Add interactivity and logic to
-            your sites.
+            <strong>HTML & CSS Basics</strong>
           </li>
           <li>
-            <strong>Responsive Design</strong> — Create websites that look great
-            on all devices.
+            <strong>Responsive Web Design</strong>
           </li>
           <li>
-            <strong>Frontend Frameworks</strong> — Get started with React for
-            dynamic web apps.
+            <strong>JavaScript Basics</strong>
           </li>
           <li>
-            <strong>Backend Development</strong> — Learn Node.js and Express.js
-            to build APIs.
+            <strong>Web Development Frameworks and Workflow</strong>
           </li>
           <li>
-            <strong>Database Integration</strong> — Work with MongoDB to store
-            and manage data.
-          </li>
-          <li>
-            <strong>Final Project</strong> — Build a complete website showcasing
-            your skills.
+            <strong>Hands-on Projects</strong>
           </li>
         </ul>
       </motion.div>
@@ -93,21 +82,31 @@ const WebDevCourse = () => {
         transition={{ delay: 0.4, duration: 0.5 }}
       >
         <h2>Class Arrangement</h2>
-        <p>Flexible learning options to suit your needs:</p>
+        <p>
+          Our course is tailored to provide ultimate flexibility and
+          accessibility, ensuring you can progress and learn effectively in the
+          most optimal way.
+        </p>
         <div className="class-options">
           <div className="option">
-            <h3>Self-Paced Learning</h3>
-            <p>Access pre-recorded lessons anytime, anywhere.</p>
-          </div>
-          <div className="option">
-            <h3>Live Sessions</h3>
-            <p>Participate in interactive live classes with Q&A sessions.</p>
-          </div>
-          <div className="option">
-            <h3>Hybrid Model</h3>
+            <h3>Remote Learning</h3>
             <p>
-              Combine self-paced modules with live sessions for the best of both
-              worlds.
+              Participate in sessions from anywhere with just an internet
+              connection.
+            </p>
+          </div>
+          <div className="option">
+            <h3>1.5-Hour Sessions</h3>
+            <p>
+              Join engaging 1.5-hour live sessions every week to learn and
+              practice.
+            </p>
+          </div>
+          <div className="option">
+            <h3>Extra Practice & Consultation</h3>
+            <p>
+              Get access to additional practice and consultations for support
+              beyond class hours.
             </p>
           </div>
         </div>
@@ -121,22 +120,26 @@ const WebDevCourse = () => {
         transition={{ delay: 0.6, duration: 0.5 }}
       >
         <h2>Pricing</h2>
-        <p>Choose your preferred plan:</p>
+        <p>
+          Choose from our class options to find the plan that suits you best.
+        </p>
         <div className="pricing-plans">
           <div className="plan">
-            <h3>Private Lessons</h3>
-            <p>$70/hour</p>
-            <p>One-on-one guidance tailored to your goals.</p>
-          </div>
-          <div className="plan">
-            <h3>Semi-Private Lessons</h3>
-            <p>$50/hour</p>
-            <p>Learn in small groups for collaborative experience.</p>
+            <h3>Semi-Private</h3>
+            <p>300K / session</p>
+            <p>
+              Perfect for learning with a small group of up to 4 friends, these
+              lessons provide a tailored syllabus and personalized planning for
+              a customized learning experience.
+            </p>
           </div>
           <div className="plan">
             <h3>Group Lessons</h3>
-            <p>$30/hour</p>
-            <p>Affordable learning in a classroom-style environment.</p>
+            <p>250K / session</p>
+            <p>
+              Perfect for those looking for a more affordable option to learn in
+              a larger group, following a fixed syllabus.
+            </p>
           </div>
         </div>
       </motion.div>
@@ -148,12 +151,17 @@ const WebDevCourse = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.5 }}
       >
-        <h2>Start Your Web Development Journey!</h2>
+        <h2>Ready to Start Learning?</h2>
         <p>
-          Take the leap into the exciting world of web development. Enroll now
-          and create amazing websites!
+          Take the first step towards mastering web development today. Enroll
+          now and begin your journey to becoming a skilled web developer!
         </p>
-        <button className="cta-button">Enroll Now</button>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSegGQ9KzA2q4egsOB9wiL1ph_qEeM2OAjD28i2RtL2dPDdpzA/viewform"
+          target="_blank"
+        >
+          <button className="cta-button">Enroll Now</button>
+        </a>
       </motion.div>
     </section>
   );

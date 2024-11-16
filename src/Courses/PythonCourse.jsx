@@ -48,34 +48,29 @@ const PythonCourse = () => {
       >
         <h2>Course Structure</h2>
         <p>
-          This course is ideal for both beginners and intermediate learners. It
-          combines theory with real-life projects to help you become proficient
-          in Python. Here's what you'll learn:
+          This course is perfect for beginners to learn their first programming
+          language. It combines fundamental theories with real-life projects to
+          help you become proficient in Python.
         </p>
+        <p>These are the concepts you will learn:</p>
         <ul>
           <li>
-            <strong>Introduction to Python</strong> — Understand the basics,
-            syntax, and environment setup.
+            <strong>Introduction to Python</strong>
           </li>
           <li>
-            <strong>Variables and Data Types</strong> — Explore different data
-            types and variables in Python.
+            <strong>Variables and Data Types</strong>
           </li>
           <li>
-            <strong>Control Flow, Loops, and Functions</strong> — Learn how to
-            use conditionals, loops, and functions to write efficient code.
+            <strong>Control Flow, Loops, and Functions</strong>
           </li>
           <li>
-            <strong>Object-Oriented Programming (OOP)</strong> — Dive into
-            classes, inheritance, and polymorphism.
+            <strong>Introduction to Data Structures</strong>
           </li>
           <li>
-            <strong>Advanced Python Topics</strong> — Explore file handling,
-            libraries, and web development with Flask.
+            <strong>Introduction to Algorithms</strong>
           </li>
           <li>
-            <strong>Hands-on Projects</strong> — Apply your skills to build
-            projects like a Python calculator, a web scraper, or a simple game.
+            <strong>Hands-on Projects</strong>
           </li>
         </ul>
       </motion.div>
@@ -89,28 +84,30 @@ const PythonCourse = () => {
       >
         <h2>Class Arrangement</h2>
         <p>
-          Our course is designed to offer maximum flexibility and accessibility.
-          You can choose between:
+          Our course is tailored to provide ultimate flexibility and
+          accessibility, ensuring you can progress and learn effectively in the
+          most optimal way.
         </p>
         <div className="class-options">
           <div className="option">
-            <h3>Self-Paced Learning</h3>
+            <h3>Remote Learning</h3>
             <p>
-              Learn at your own pace with pre-recorded lessons, available 24/7.
+              Participate in sessions from anywhere with just an internet
+              connection.
             </p>
           </div>
           <div className="option">
-            <h3>Live Sessions</h3>
+            <h3>1.5-Hour Sessions</h3>
             <p>
-              Attend weekly live coding sessions with the instructor and fellow
-              students.
+              Join engaging 1.5-hour engaging live sessions every week to learn
+              and practice.
             </p>
           </div>
           <div className="option">
-            <h3>Hybrid Model</h3>
+            <h3>Extra Practice & Consultation</h3>
             <p>
-              Combine self-paced learning with live sessions for a balanced
-              approach.
+              Get access to additional practice and consultations for support
+              beyond class hours.
             </p>
           </div>
         </div>
@@ -124,28 +121,26 @@ const PythonCourse = () => {
         transition={{ delay: 0.6, duration: 0.5 }}
       >
         <h2>Pricing</h2>
-        <p>Pick a plan that works best for you:</p>
+        <p>
+          Choose from our class options to find the plan that suits you best.
+        </p>
         <div className="pricing-plans">
           <div className="plan">
-            <h3>Private Lessons</h3>
-            <p>$50/hour</p>
+            <h3>Semi-Private</h3>
+            <p>300K / session</p>
             <p>
-              One-on-one, personalized instruction to meet your individual
-              learning goals.
-            </p>
-          </div>
-          <div className="plan">
-            <h3>Semi-Private Lessons</h3>
-            <p>$35/hour</p>
-            <p>
-              Collaborative learning with small groups, ideal for peer support
-              and discussion.
+              Perfect for learning with a small group of up to 4 friends, these
+              lessons provide a tailored syllabus and personalized planning for
+              a customized learning experience.
             </p>
           </div>
           <div className="plan">
             <h3>Group Lessons</h3>
-            <p>$20/hour</p>
-            <p>A more affordable option to learn in a larger group setting.</p>
+            <p>250K / session</p>
+            <p>
+              Perfect for those looking for a more affordable option to learn in
+              a larger group, following a fixed syllabus.
+            </p>
           </div>
         </div>
       </motion.div>
@@ -160,9 +155,14 @@ const PythonCourse = () => {
         <h2>Ready to Start Learning?</h2>
         <p>
           Take the first step towards mastering Python today. Enroll now and
-          begin your journey to becoming a skilled Python developer!
+          begin your journey to becoming a skilled Python programmer!
         </p>
-        <button className="cta-button">Enroll Now</button>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSegGQ9KzA2q4egsOB9wiL1ph_qEeM2OAjD28i2RtL2dPDdpzA/viewform"
+          target="_blank"
+        >
+          <button className="cta-button">Enroll Now</button>
+        </a>
       </motion.div>
     </section>
   );
