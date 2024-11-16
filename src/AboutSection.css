@@ -1,11 +1,10 @@
 .common-section {
   color: #f8f9fa; /* Light text color for contrast */
-  padding: 80px 0; /* Increase top and bottom padding */
-  min-height: 120vh; /* Increase minimum height for larger content */
   display: flex;
   flex-direction: column;
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center horizontally */
+  height: fit-content;
 }
 
 .common-title {
@@ -31,22 +30,6 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
-/* Description styles */
-.common-description {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  text-align: justify; /* Justified text for a clean look */
-  margin: 20px 0;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1); /* Light background */
-  border-radius: 15px; /* Rounded corners */
-}
-
-/* Paragraph styles */
-.common-description p {
-  margin-bottom: 15px; /* Space between paragraphs */
-}
-/* Blinking cursor */
 .cursor {
   display: inline-block;
   margin-left: 2px;
@@ -113,16 +96,6 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
-.common-description {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  height: 100%; /* Prevents description column from shrinking */
-}
-
 .logo-container img {
   max-width: 250px; /* Adjust based on your logo size */
   height: auto;
@@ -145,7 +118,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 820px) {
   .row {
     flex-direction: column-reverse; /* Stack the sections vertically on smaller screens */
   }
@@ -212,6 +185,9 @@
   color: #dcdcdc;
   line-height: 1.8;
   font-size: 1rem;
+  height: auto;
+  overflow: scroll;
+  text-align: justify;
 }
 
 /* Paragraph Styling Inside Description */
@@ -219,7 +195,7 @@
   margin-bottom: 1.5rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 820px) {
   /* Stack sections vertically */
   .row {
     flex-direction: column; /* Stack content vertically */
@@ -251,42 +227,23 @@
     padding: 10px 20px; /* Adjust button padding */
     font-size: 0.9rem; /* Slightly smaller font size */
   }
-}
-
-@media (max-width: 767px) {
-  .common-section {
-    padding: 100px 20px; /* Increase padding on smaller screens */
-    min-height: 140vh; /* Provide more space for stacked content */
-  }
-
-  .row {
-    flex-direction: column; /* Stack sections vertically */
-    align-items: center; /* Center items */
-  }
-
-  .logo-container {
-    margin-bottom: 2rem; /* Add space below the logo */
-  }
-
-  .common-title {
-    font-size: 2rem; /* Slightly larger for better visibility */
-    margin-bottom: 2rem; /* Add spacing below title */
-    text-align: center;
-  }
 
   .common-description {
-    margin-top: 2rem; /* Add space above description */
-    font-size: 1.1rem; /* Adjust text size */
-    padding: 25px; /* Add padding for better spacing */
-    background-color: rgba(30, 30, 30, 0.8); /* Maintain background contrast */
-    margin-bottom: 10vh;
+    height: 50vh !important;
   }
 }
 
-.common-description {
+.common-section {
+  color: #f8f9fa;
+  padding: 80px 10px; /* Adjust padding for smaller screens */
+  min-height: 100vh; /* Ensure full viewport height */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  position: relative;
+  overflow: hidden; /* Prevent overflow issues */
+  box-sizing: border-box; /* Include padding and border in dimensions */
 }
 
 .d-flex {

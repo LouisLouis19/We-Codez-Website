@@ -178,7 +178,7 @@ footer {
 }
 
 /* Optional: Adjust for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .faq-contact-container {
     flex-direction: column;
     gap: 20px;

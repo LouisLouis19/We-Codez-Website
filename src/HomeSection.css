@@ -97,14 +97,14 @@
   background-color: #1e1e1e;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .laptop-container {
     width: 100%;
     padding: 20px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .common-title {
     font-size: 2rem; /* Adjust the title size for smaller screens */
   }
@@ -114,12 +114,15 @@
   }
 
   .btn-get-started {
-    font-size: 0.9rem; /* Make the button text slightly smaller */
-    padding: 10px 20px;
+    font-size: 0.9rem; /* Adjust font size */
+    padding: 10px 20px; /* Scale padding for smaller screens */
+    width: auto; /* Prevent width from breaking */
+    min-width: 150px; /* Ensure minimum width for readability */
+    display: inline-block; /* Prevent full-width expansion */
   }
 
   .laptop-container {
-    max-width: 90%; /* Use more of the screen width */
+    max-width: 80%; /* Use more of the screen width */
     padding: 15px;
     margin: 20px auto; /* Center the laptop container */
   }

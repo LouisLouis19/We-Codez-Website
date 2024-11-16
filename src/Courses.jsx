@@ -34,7 +34,7 @@ const programmingCourses = [
 
 const classTypes = [
   {
-    title: "Semi-Private Classes",
+    title: "Semi-Private",
     imgsrc: img4,
     description:
       "Experience personalized guidance in an intimate class setting, ensuring focused learning",
@@ -71,7 +71,7 @@ const Courses = () => {
           <div className="col-10 mx-auto">
             {/* First Row with Programming Languages Offered */}
             <div className="card-row mt-4">
-              <h2>Programming Languages</h2>
+              <h2>Programming Language</h2>
               <div className="cards-wrapper">
                 {programmingCourses.map((course, index) => (
                   <Card key={index} {...course} className="card mx-2" />
@@ -91,7 +91,7 @@ const Courses = () => {
 
             {/* Third Row for Enterprise / Schools */}
             <div className="card-row mt-4">
-              <h2>Professional Collaborations</h2>
+              <h2>Professional Collaboration</h2>
               <div className="cards-wrapper">
                 {enterprisePackages.map((packageItem, index) => (
                   <Card key={index} {...packageItem} className="card mx-2" />
