@@ -114,7 +114,7 @@
   }
 
   .btn-get-started {
-    font-size: 0.9rem; /* Adjust font size */
+    font-size: 0.75rem; /* Adjust font size */
     padding: 10px 20px; /* Scale padding for smaller screens */
     width: auto; /* Prevent width from breaking */
     min-width: 150px; /* Ensure minimum width for readability */

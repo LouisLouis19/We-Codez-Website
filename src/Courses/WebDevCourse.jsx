@@ -3,10 +3,12 @@ import { motion } from "framer-motion";
 import "./CourseDetails.css";
 import img from "../Pictures/Courses-Website_Development.jpeg"; // Replace with actual image URL
 import { Link } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop";
 
 const WebDevCourse = () => {
   return (
     <section className="course-section">
+      <ScrollToTop />
       <motion.div
         className="back-to-home"
         initial={{ opacity: 0, x: -20 }}
@@ -119,7 +121,7 @@ const WebDevCourse = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.5 }}
       >
-        <h2>Pricing</h2>
+        <h2>Pricing (Per Pax)</h2>
         <p>
           Choose from our class options to find the plan that suits you best.
         </p>
@@ -128,9 +130,9 @@ const WebDevCourse = () => {
             <h3>Semi-Private</h3>
             <p>300K / session</p>
             <p>
-              Perfect for learning with a small group of up to 4 friends, these
-              lessons provide a tailored syllabus and personalized planning for
-              a customized learning experience.
+              Perfect for learning with a small group of up to 4 friends. These
+              lessons provide personalized planning for a customized learning
+              experience.
             </p>
           </div>
           <div className="plan">

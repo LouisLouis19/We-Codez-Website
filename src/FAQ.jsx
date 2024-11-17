@@ -5,7 +5,7 @@ const faqData = [
   {
     question: "What programming languages will I learn?",
     answer:
-      "In this course, you'll start with Python, a beginner-friendly language that's widely used for web development, data science, and automation. Later, you may explore other languages depending on your goals.",
+      "We offer classes in Python, Golang, and for website development (HTML, CSS, JS). You can choose which language you are more interested in, or contact us to inquire more about which programming language suits you best.",
   },
   {
     question: "Do I need prior coding experience?",
@@ -15,22 +15,17 @@ const faqData = [
   {
     question: "How long is the course?",
     answer:
-      "The course spans 8 weeks, with interactive lessons, practice exercises, and support along the way. You can progress at your own pace.",
+      "Our group class is aimed for 5-6 months. For semi-private classes, it is tailored to specific needs depending on the students' needs and objectives.",
   },
   {
-    question: "Will I get a certificate?",
+    question: "Can I ask questions during the group classes?",
     answer:
-      "Yes! Upon successfully completing the course, you will receive a certificate that you can showcase on your resume or LinkedIn profile.",
+      "Absolutely! We encourage more questions and discussions. The classes are interactive, and you're encouraged to ask questions at any time, even outside of class hours. The instructor will make sure everyone fully grasps the concepts.",
   },
   {
-    question: "Can I ask questions during the course?",
+    question: "What should I do if I have trouble understanding the concepts?",
     answer:
-      "Absolutely! We encourage questions and discussions. You'll have access to a community forum, as well as direct support from the instructor (Ka Louis).",
-  },
-  {
-    question: "What kind of support will I get?",
-    answer:
-      "You'll get support via email, forums, and live Q&A sessions. Our goal is to make sure you understand the material and have a successful learning experience.",
+      "You can request for any support during class or outside of class hours. Our aim is to ensure you fully understand the material and have a rewarding learning experience.",
   },
 ];
 

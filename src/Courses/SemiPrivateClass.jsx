@@ -3,10 +3,12 @@ import { motion } from "framer-motion";
 import "./CourseDetails.css";
 import img from "../Pictures/Courses-Semi_Private.jpg"; // Replace with actual image URL
 import { Link } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop";
 
 const SemiPrivateClass = () => {
   return (
     <section className="course-section">
+      <ScrollToTop />
       <motion.div
         className="back-to-home"
         initial={{ opacity: 0, x: -20 }}
@@ -122,7 +124,7 @@ const SemiPrivateClass = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.5 }}
       >
-        <h2>Pricing</h2>
+        <h2>Pricing (Per Pax)</h2>
         <p>
           Our semi-private classes are priced to ensure that you receive
           high-quality learning while maintaining affordability.

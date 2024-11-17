@@ -3,10 +3,12 @@ import { motion } from "framer-motion";
 import "./CourseDetails.css";
 import img from "../Pictures/Courses-Group_Classes.jpg"; // Replace with actual image URL
 import { Link } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop";
 
 const GroupClass = () => {
   return (
     <section className="course-section">
+      <ScrollToTop />
       <motion.div
         className="back-to-home"
         initial={{ opacity: 0, x: -20 }}
@@ -63,13 +65,15 @@ const GroupClass = () => {
             <strong>Community & Collaboration</strong> — Engage with other
             students, share ideas, and collaborate on projects.
           </li>
-          <li>
-            <strong>Peer Support</strong> — Benefit from a community where you
-            can ask questions, receive feedback, and help others.
-          </li>
+
           <li>
             <strong>Learn from One Another</strong> — Group settings allow you
             to share knowledge, tips, and techniques with fellow students.
+          </li>
+          <li>
+            <strong>Engaging Sessions with Instructors</strong> — Learn through
+            interactive sessions where instructors teach concepts and provide
+            personalized guidance.
           </li>
         </ul>
       </motion.div>
@@ -97,12 +101,14 @@ const GroupClass = () => {
             </p>
           </div>
           <div className="option">
-            <h3>Collaborative Learning</h3>
+            <h3>Engaging Live Sessions</h3>
             <p>
-              Share ideas, collaborate on challenges, and learn from one another
-              in a group setting.
+              Participate in real-time interactive sessions with instructors,
+              where you can learn new concepts, ask questions, and actively
+              engage with the material.
             </p>
           </div>
+
           <div className="option">
             <h3>Flexible Learning Pace</h3>
             <p>
@@ -120,7 +126,7 @@ const GroupClass = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.5 }}
       >
-        <h2>Pricing</h2>
+        <h2>Pricing (Per Pax)</h2>
         <p>
           Group classes are designed to be an affordable way to learn with
           others, making it easier for you to join and benefit from the

@@ -10,19 +10,19 @@ function BlogList() {
   const blogPosts = [
     {
       id: "learn-python",
-      title: "Learning Python for Beginners: A Complete Guide",
-      readTime: "3-min read",
+      title: "Learning Python for Beginners",
+      readTime: "4-min read",
       image: img1,
     },
     {
       id: "programming-language-to-learn",
-      title: "What Programming Language to Learn?",
-      readTime: "8-min read",
+      title: "Which Programming Language Should I Learn?",
+      readTime: "5-min read",
       image: img2,
     },
     {
       id: "learning-with-others",
-      title: "The Importance of Learning Coding with Others",
+      title: "The Importance of Learning Coding with Friends",
       readTime: "5-min read",
       image: img3,
     },
