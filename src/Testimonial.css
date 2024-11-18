@@ -39,20 +39,18 @@
 /* For smaller screen sizes */
 @media (max-width: 820px) {
   .testimonial-container {
-    max-width: 60vw;
+    max-width: 90vw;
   }
   .testimonial-card {
-    max-width: 90%; /* Ensure it doesn't stretch beyond container */
-    min-width: 45vw; /* Maintain a minimum width */
-    height: auto; /* Allow flexible height */
-    border-radius: 2rem;
-    overflow: visible;
+    height: 80vh;
+    border-radius: 0;
+    overflow: hidden;
   }
 
   .testimonial-feedback {
-    font-size: 0.9rem; /* Slightly smaller text for mobile */
-    line-height: 1.4;
-    padding: 0 1rem;
+    max-width: 80vw !important;
+    font-size: 0.65rem !important; /* Slightly smaller text for mobile */
+    text-align: justify;
   }
 }
 

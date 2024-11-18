@@ -1,36 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll"; // Import Link from react-scroll
 import "./Navbar.css"; // Import custom CSS
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false); // State to control navbar collapse
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen); // Toggle navbar state
+  };
+
+  const handleClose = () => {
+    setIsOpen(false); // Close the navbar when a link is clicked
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark py-3 shadow-sm">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="home" smooth={true} duration={500}>
+        <Link
+          className="navbar-brand"
+          to="home"
+          smooth={true}
+          duration={500}
+          onClick={handleClose} // Close navbar when brand is clicked
+        >
           We Codez⋆
         </Link>
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
+          onClick={handleToggle} // Toggle collapse on click
           aria-controls="navbarSupportedContent"
-          aria-expanded="false"
+          aria-expanded={isOpen}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
       </div>
 
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <div
+        className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}
+        id="navbarSupportedContent"
+      >
         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <Link to="home" smooth={true} duration={500} className="nav-link">
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="nav-link"
+              onClick={handleClose} // Close navbar on link click
+            >
               Home
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="about" smooth={true} duration={500} className="nav-link">
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="nav-link"
+              onClick={handleClose} // Close navbar on link click
+            >
               About
             </Link>
           </li>
@@ -40,6 +70,7 @@ function Navbar() {
               smooth={true}
               duration={500}
               className="nav-link"
+              onClick={handleClose} // Close navbar on link click
             >
               Testimonial
             </Link>
@@ -50,12 +81,19 @@ function Navbar() {
               smooth={true}
               duration={500}
               className="nav-link"
+              onClick={handleClose} // Close navbar on link click
             >
               Courses
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="blog" smooth={true} duration={500} className="nav-link">
+            <Link
+              to="blog"
+              smooth={true}
+              duration={500}
+              className="nav-link"
+              onClick={handleClose} // Close navbar on link click
+            >
               Blogs
             </Link>
           </li>
@@ -65,6 +103,7 @@ function Navbar() {
               smooth={true}
               duration={500}
               className="nav-link"
+              onClick={handleClose} // Close navbar on link click
             >
               Contact
             </Link>

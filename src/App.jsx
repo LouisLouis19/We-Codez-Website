@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
@@ -23,6 +24,18 @@ import GroupClass from "./Courses/GroupClass";
 import ProfessionalCollaboration from "./Courses/ProfessionalCollaboration";
 
 function MainPage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Scroll to the hash location if it exists
+    if (location.hash) {
+      const target = document.querySelector(location.hash);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <Navbar />

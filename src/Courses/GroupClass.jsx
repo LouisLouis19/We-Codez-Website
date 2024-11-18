@@ -15,7 +15,7 @@ const GroupClass = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3 }}
       >
-        <Link to="/" className="back-link">
+        <Link to="/#courses" className="back-link">
           ← Back to Home
         </Link>
       </motion.div>

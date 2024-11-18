@@ -41,7 +41,7 @@ const classTypes = [
     linkTo: "/course-details/semiprivate",
   },
   {
-    title: "Group Classes",
+    title: "Group Class",
     imgsrc: img5,
     description:
       "Engage in dynamic, collaborative learning with peers, fostering teamwork and shared growth",
